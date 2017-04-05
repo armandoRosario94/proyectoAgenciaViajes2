@@ -1,0 +1,4 @@
+<?php
+	$consultas = new Consultas();
+	
+?>
