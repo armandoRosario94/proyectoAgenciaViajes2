@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Registrar Usuario</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Práctica 2 - TIII" />
+    <meta name="keywords" content="HTML5, CSS3, GIT, GITHUB, PHP, MARIADB " />
+    <meta name="author" content="ConociendoOaxaca" />
+    <link rel="stylesheet" href="css/style-panel-admin.css" type="text/css" />
+    
+     <!-- INICIAN ETIQUETAS NUEVAS -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <!-- TERMINAN ETIQUETAS NUEVAS -->
+</head>
+<body>
+<p><a href="index.html"> <input name="button" type="button" onclick="window.location='index.html';" value="REGRESAR A INICIO" /></a></p>
+ <div id='contenido'>
+   <h1> Registro de Usuario</h1>
+    
+<section>    
+<form action="recibe.php" name="f1" id"f1" method="post">
+<fieldset>
+<br>
+<label for="campoNombreCompleto">Nombre Completo:</label>
+<input type="text"  name="v_nombreCompleto" placeholder="Ingrese Nombre Completo" required="required">
+</br>
+<br>
+<label for="campoCorreo">Correo:</label>
+<input type="text" name="v_correo" placeholder="Ingrese Correo" required="required">
+</br>
+
+<br>
+<label for="campoFechNacimiento">Fecha de Nacimiento</label>
+<input type="text" name="v_fechaNacimiento" placeholder="Ingrese fecha de nac" required="required">
+</br>
+
+<br>
+<label for="campoSexo">Sexo:</label>
+                 <td><select name="campoSexo">
+                     <option value="Masculino">M</option>
+                     <option value="Femenino">F</option>
+                 </select></td>
+</br>
+
+<br>
+<label for="v_usuario">Usuario:</label>
+<input type="text" name="campoUsuario" placeholder="Ingrese Usuario" required="required">
+</br>
+<br>
+<label for="v_contrasena">Contraseña:</label>
+<input type="password" name="campoContrasena" placeholder="Ingrese Contraseña" required="required">
+</br>
+<input type="submit" value="Registrar" name="btnRegistarCliente" class="botonregistrar">
+
+<input type="reset" value="Limpiar" name="btnLimpiarCliente" class="botonlimpiar">
+</fieldset>
+</form>
+</section>
+</div>
+</body>
+</html>
