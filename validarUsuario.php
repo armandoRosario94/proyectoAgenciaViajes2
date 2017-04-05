@@ -1,9 +1,11 @@
 <?php
-    require "/php/BaseDatos.php";
+    //require_once ('../baseDatos/class.conexion.php');
+    //require_once ('../baseDatos/class.consultas.php');
+    require ("baseDatos/baseDatos.php");
 
     $tipoUsuario = $_POST['selectTipoUsuario'];
-    $usuario = $_POST['v_user'];
-    $contrasena = $_POST['v_password'];   
+    $usuario = $_POST['campoUsuario'];
+    $contrasena = $_POST['campoContrasena'];   
 
     if ($tipoUsuario == "administrador") {
         //alert "el usuario es de tipo administrador";
@@ -20,8 +22,29 @@
         //echo "el usuario es de tipo desconocido";
     }
 
-            
-    /*
+
+    function consultarDatosAministrador($varLocalTipoUsuario,$varLocalUsuario,$varLocalContrasena) {
+        $resultadoFila = null;        
+
+        $query = "SELECT usuario,contrasena FROM administrador where usuario ='$varLocalUsuario' and contrasena = '$varLocalContrasena'";
+        //$query = "SELECT * from administrador";        
+        $objetoBd = new BaseDatos();
+        $objetoBd->realizarConexion();
+
+        $resultados = $objetoBd->consultarUsuario($query);
+    
+        if ($resultados !== false) {
+            echo"<script>alert('el usuario Administrador: ". $varLocalUsuario." si se encuentra registrado')</script>";
+            header('location:administracion/index.php');
+        } else {
+            echo"<script>alert('el usuario Administrador: ". $varLocalUsuario." no se encuentra registrado')</script>";            
+            //header('location:index.html');
+            echo "<a href='index.html'>Salir</a>";
+        }
+
+        $objetoBd->cerrarConexion();
+    }
+        /*
     echo "<div class='panel_superior'>";
         if($usuario=='heydi' && $contrasenia=='admin') {
             echo "Bienvenido Lic. Heydi";
@@ -32,32 +55,6 @@
         }
         echo "</div>";
     */                
-
-    function consultarDatosAministrador($varLocalTipoUsuario,$varLocalUsuario,$varLocalContrasena) {
-        //$query = "SELECT usuario, contrasena FROM administrador where usuario= '"+$usuario"' and contrasena ='"+$contrasena "'";        
-        echo"<script>alert('el usuario es de tipo: ". $varLocalTipoUsuario."')</script>";
-        echo"<script>alert('usuario: ".$varLocalUsuario."')</script>";
-        echo"<script>alert('constrasena: ".$varLocalContrasena."')</script>";
-        
-        
-
-        $query = "SELECT usuario,contrasena FROM administrador where usuario = $varLocalUsuario  and contrasena =$varLocalContrasena";
-        $bd = new BaseDatos();
-        $bd->realizarConexion();
-        $resultado = $bd->realizarConsulta($query);
-        //$bd->realizarConsulta($query);
-
-        /* determinar el número de filas del resultado */
-        $numeroFilas = $resultado->num_rows;
-        //$numeroFilas = mysqli_num_rows($resultado);
-        printf("Número de filas resultantes: %d rows.\n",$numeroFilas);
-
-        //$numeroFilas = mysqli_num_rows($resultado);
-        //printf("Número de filas resultantes: %d rows.\n",$numeroFilas);
-        mysqli_free_result($resultado); //Libera la memoria asociada a un resultado
-
-        //cerrar el resultset */
-        //$resultado->close();
-        $bd->cerrarConexion();
-    }
 ?>
+
+
