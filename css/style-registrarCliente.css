@@ -1,0 +1,10 @@
+body{
+
+}
+.container{
+	width: 50%;
+	height:450px;
+	background-color: green;
+	float: left; /*Comprime el div de acuerdo al texto y a la direccion dada*/
+	clear: left;
+}
