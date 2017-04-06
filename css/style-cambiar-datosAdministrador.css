@@ -1,0 +1,218 @@
+#contenedorPrincipal{
+	width: 50%;
+	height: 460px;
+	/*background-color: blue;*/
+	text-align: center;
+	margin-top: 10%;
+	margin-left: 25%;
+}
+section{
+	width: 49%;
+	height:450px;
+	/*background-color: green;*/
+	float: left; /*Comprime el div de acuerdo al texto y a la direccion dada*/
+	clear: left;
+}
+aside{
+	width: 49%;
+	height:450px;
+ 	float: right; /*Comprime el div de acuerdo al texto y a la direccion dada*/
+ 	clear: right;	
+}
+h1{
+	color:teal;	
+	font-size: 30px;
+ 	font-family: Arial, Verdana;
+ 	text-align: center;
+}
+#divImagen {
+	width: 100%;
+	height:200px;
+	margin-top: 3%;
+ 	float: right; /*Comprime el div de acuerdo al texto y a la direccion dada*/
+ 	clear: right;
+ 	background-image: url("../administracion/images/puerto.jpg");
+ 	background-size: 100% 200px;
+	background-repeat: no-repeat;
+}
+#articleuno{
+	width: 100%;
+	height:250px;
+ 	border: 1px solid #DBE1EB;
+  	font-size: 20px;
+ 	font-family: Arial, Verdana;
+ 	padding-left: 7px;
+  	padding-right: 7px;
+ 	padding-top: 10px;
+  	padding-bottom: 10px;
+  	border-radius: 4px;
+  	opacity: 0.;
+}
+#articledos{
+	width: 100%;
+	height:200px;
+ 	/*background-color: red;*/
+}
+#articletres{
+	width: 100%;
+	height:450px;
+}
+#btne{
+  	 display: inline-block;
+    width: 100%;
+    height: 35px;
+    font-size: 1.2em; 
+    border:1px solid  #DBE1EB;
+    text-align: center;
+    background-image: url('../img/camara.png');
+    background-size: 10% 30px;
+    background-color: white;
+    background-repeat: no-repeat;
+    color:teal;
+   
+}
+
+#btne2{
+	margin-top: 10%;
+    margin-left: 4%;
+  	display: inline-block;
+    width: 96%;
+    height: 35px;
+    font-size: 1.5em; 
+    color:teal;
+    border:1px solid #DBE1EB;
+    text-align: center;
+    background-image: url('../img/youtube.png');
+    background-size: 10% 30px;
+      background-position: left;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+#btne3{
+	margin-top: 10%;
+    margin-left: 4%;
+  	display: inline-block;
+    width: 96%;
+    height: 35px;
+    font-size: 1.5em; 
+    color:teal;
+    border:1px solid #DBE1EB;
+    text-align: center;
+    background-image: url('../img/facebook.png');
+    background-size: 10% 30px;
+      background-position: left;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+#btne4{
+	margin-top: 12%;
+    margin-left: 4%;
+  	display: inline-block;
+    width: 96%;
+    height: 35px;
+    font-size: 1.5em; 
+    color:teal;
+    border:1px solid #DBE1EB;
+    text-align: center;
+    background-image: url('../img/usuario.png');
+    background-size: 10% 28px;
+    background-position: left;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+#btne5{
+	margin-top: 14%;
+    margin-left: 4%;
+  	display: inline-block;
+    width: 96%;
+    height: 35px;
+    font-size: 1.5em; 
+    color:teal;
+    border:1px solid #DBE1EB;
+    text-align: center;
+    background-image: url('../img/usuario.png');
+      background-position: left;
+    background-size: 10% 28px;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+#btne6{
+	margin-top: 14%;
+    margin-left: 4%;
+  	display: inline-block;
+    width: 96%;
+    height: 35px;
+    font-size: 1.5em; 
+    color:teal;
+    border:1px solid #DBE1EB;
+    text-align: center;
+    background-image: url('../img/candado.png');
+      background-position: left;
+    background-size: 12% 40px;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+
+#btne7{
+	margin-top: 14%;
+    margin-left: 4%;
+  	display: inline-block;
+    width: 96%;
+    height: 35px;
+    font-size: 1.5em; 
+    color:teal;
+    border:1px solid #DBE1EB;
+    text-align: center;
+    background-image: url('../img/candado.png');
+      background-position: left;
+    background-size: 12% 40px;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+#btne8{
+	margin-top: 14%;
+    margin-left: 4%;
+  	display: inline-block;
+    width: 96%;
+    height: 35px;
+    font-size: 1.5em; 
+    color:teal;
+    border:1px solid #DBE1EB;
+    text-align: center;
+    background-image: url('../img/correo.png');
+      background-position: left;
+    background-size: 10% 30px;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+
+#btne9{
+	
+    margin-left: 1%;
+  	display: inline-block;
+    width: 35%;
+    height: 35px;
+    font-size: 1.2em; 
+    color:white;
+    border:1px solid #DBE1EB;
+    text-align: center;
+     background-position: left;
+    background-size: 10% 30px;
+    background-color: teal;
+    background-repeat: no-repeat;
+}
+
+#btne10{
+    margin-left: 6%;
+  	display: inline-block;
+    width: 35%;
+    height: 35px;
+    font-size: 1.2em; 
+    color:white;
+    border:1px solid #DBE1EB;
+    text-align: center;
+      background-position: left;
+    background-size: 10% 30px;
+    background-color: teal;
+    background-repeat: no-repeat;
+}
