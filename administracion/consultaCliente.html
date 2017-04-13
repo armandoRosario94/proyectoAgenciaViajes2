@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Registrar Usuario</title>
+    <title>Consulta Usuario</title>
    <meta charset="UTF-8" />
         <meta name="description" content="Práctica 2 - TIII" />
         <meta name="keywords" content="HTML5, CSS3, GIT, GITHUB, PHP, MARIADB " />
@@ -50,20 +50,23 @@
 <section>  
     <div class="container">
         <form action="" class=""> 
-            <h1> Registro de Usuario</h1>
+            <h1>Consulta Usuario</h1>
+             <label class=""><label class="form-group">Usuario (id):</label></label>
+                <label class="input-inline"><input type="text" name="campoUsuario" placeholder="Usuario"></label>
+                <label class="input-inline"><input type="submit" value="Buscar Cliente" name="btnBuscarCliente" class="btn btn-info"></label>
 
             <div><label class="form-group">Nombre Completo:</label></div>
             <div class="form-group">
                 <div class="input-group">
                     <div class="input-group-addon glyphicon glyphicon-user"></div>
-                     <input class="form-control" type="text"  name="campoNombreCompleto" placeholder="Ingrese Nombre Completo" required="required">
+                     <input class="form-control" type="text"  name="campoNombreCompleto" placeholder="Ingrese Nombre Completo" required="required" disabled>
                  </div>
             </div>
             <div><label class="form-group">Correo:</label></div>
             <div class="form-group">
                 <div class="input-group">
                     <div class="input-group-addon">@</div>
-                    <input class="form-control" type="text" name="campoCorreo" placeholder="Ingrese Correo" required="required">
+                    <input class="form-control" type="text" name="campoCorreo" placeholder="Ingrese Correo" required="required" disabled>
                 </div>
             </div>
             <div>
@@ -72,7 +75,7 @@
             <div class="form-group">
                 <div class="input-group">
                     <div class="input-group-addon glyphicon glyphicon-calendar"></div>
-                    <input  type="date" step="1" min="2017-01-01" max="2017-12-31" class="form-control" name="campoFechaNacimiento" placeholder="Ingrese fecha de nacimiento" required="required">
+                    <input  type="date" step="1" min="2017-01-01" max="2017-12-31" class="form-control" name="campoFechaNacimiento" placeholder="Ingrese fecha de nacimiento" required="required" disabled>
                 </div>    
             </div>
             <div> <label class="form-group">Sexo:</label></div>
@@ -80,7 +83,7 @@
             <div class="form-group">
                 <div class="input-group">
                     <div class="input-group-addon glyphicon glyphicon-chevron-down"></div>
-                    <select class="form-control" name="campoSexo">
+                    <select class="form-control" name="campoSexo" disabled>
                         <option value="Masculino">M</option>
                         <option value="Femenino">F</option>
                     </select>
@@ -89,8 +92,8 @@
             <div><label for="campoUsuario">Usuario:</label></div>
             <div class="form-group">
                 <div class="input-group">
-                    <div class="input-group-addon glyphicon glyphicon-user"></div>
-                    <input class="form-control" type="text" name="campoUsuario" placeholder="Ingrese Usuario" required="required">
+                    <div class="input-group-addon glyphicon glyphicon-user" ></div>
+                    <input class="form-control" type="text" name="campoUsuario" placeholder="Ingrese Usuario" required="required" disabled>
                 </div>
             </div>
         
@@ -98,13 +101,10 @@
             <div class="form-group">
                 <div class="input-group">
                     <div class="input-group-addon glyphicon glyphicon-lock"></div>
-                    <input class="form-control" type="text" name="campoContrasena" placeholder="Ingrese Contraseña" required="required">
+                    <input class="form-control" type="text" name="campoContrasena" placeholder="Ingrese Contraseña" required="required" disabled>
                 </div>
             </div>
-        
-          
-            <input type="submit" value="Registrar" name="btnRegistarCliente" class="btn btn-info">
-            <input type="reset" value="Limpiar" name="btnLimpiarCliente" class="btn btn-info">
+    
          </form> 
     </div>
 </section>

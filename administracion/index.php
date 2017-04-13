@@ -429,9 +429,9 @@
 
 					<li class="">
 						<a href="#" class="dropdown-toggle">
-							<i class="menu-icon fa fa-desktop"></i>
+							<i class="menu-icon fa fa-user"></i>
 							<span class="menu-text">
-								Elemento 1
+								Cliente
 							</span>
 
 							<b class="arrow fa fa-angle-down"></b>
@@ -441,13 +441,12 @@
 
 						<ul class="submenu">
 							<li class="">
-								<a href="#" class="dropdown-toggle">
+								<a href="registrarCliente.html" class="divider">
 									<i class="menu-icon fa fa-caret-right"></i>
 
-									Contenido 1
+									Registrar Cliente
 									<b class="arrow fa fa-angle-down"></b>
 								</a>
-
 								<b class="arrow"></b>
 
 								<ul class="submenu">
@@ -483,23 +482,23 @@
 							</li>
 
 							<li class="">
-								<a href="#">
+								<a href="modificarCliente.html">
 									<i class="menu-icon fa fa-caret-right"></i>
-									Contenido 2
+									Modificar Cliente
 								</a>
 
 								<b class="arrow"></b>
 							</li>
 
 							<li class="">
-								<a href="#">
+								<a href="eliminarCliente.html">
 									<i class="menu-icon fa fa-caret-right"></i>
-									Contenido 3
+									Eliminar Cliente
 								</a>
 
 								<b class="arrow"></b>
 							</li>
-
+							<!--
 							<li class="">
 								<a href="#">
 									<i class="menu-icon fa fa-caret-right"></i>
@@ -560,7 +559,7 @@
 										</ul>
 									</li>
 								</ul>
-							</li>
+							</li>-->
 						</ul>
 					</li>
 
